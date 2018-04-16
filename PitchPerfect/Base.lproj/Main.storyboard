@@ -26,13 +26,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5v-5B-0Fb">
-                                <rect key="frame" x="109" y="385.5" width="102" height="21"/>
+                                <rect key="frame" x="109" y="361.5" width="102" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QqZ-cp-lNV">
-                                <rect key="frame" x="128.5" y="430.5" width="64" height="64"/>
+                                <rect key="frame" x="128.5" y="385.5" width="64" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="CjF-Jo-zk7"/>
                                     <constraint firstAttribute="width" constant="64" id="SKQ-N0-TsJ"/>
@@ -45,11 +45,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Q5v-5B-0Fb" firstAttribute="top" secondItem="s6u-lq-2Dx" secondAttribute="bottom" constant="24" id="EgG-mZ-pQn"/>
+                            <constraint firstItem="Q5v-5B-0Fb" firstAttribute="top" secondItem="s6u-lq-2Dx" secondAttribute="bottom" id="EgG-mZ-pQn"/>
                             <constraint firstItem="QqZ-cp-lNV" firstAttribute="centerX" secondItem="Q5v-5B-0Fb" secondAttribute="centerX" id="MJl-R3-OBj"/>
                             <constraint firstItem="Q5v-5B-0Fb" firstAttribute="centerX" secondItem="s6u-lq-2Dx" secondAttribute="centerX" id="bO1-af-yrl"/>
                             <constraint firstItem="s6u-lq-2Dx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="exT-pN-mYn"/>
-                            <constraint firstItem="QqZ-cp-lNV" firstAttribute="top" secondItem="Q5v-5B-0Fb" secondAttribute="bottom" constant="24" id="krf-Ak-0Al"/>
+                            <constraint firstItem="QqZ-cp-lNV" firstAttribute="top" secondItem="Q5v-5B-0Fb" secondAttribute="bottom" constant="3" id="krf-Ak-0Al"/>
                             <constraint firstItem="s6u-lq-2Dx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wWL-oG-zKZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
