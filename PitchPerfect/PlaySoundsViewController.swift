@@ -59,7 +59,18 @@ class PlaySoundsViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        setContentModeForImageViews()
         configureUI(.notPlaying)
+    }
+    
+    // tried to set this in storyboard on first submit but it didn't seem to have an effect.
+    func setContentModeForImageViews(){
+        slowButton.imageView?.contentMode = .scaleAspectFit
+        highPitchButton.imageView?.contentMode = .scaleAspectFit
+        fastButton.imageView?.contentMode = .scaleAspectFit
+        lowPitchButton.imageView?.contentMode = .scaleAspectFit
+        echoButton.imageView?.contentMode = .scaleAspectFit
+        reverbButton.imageView?.contentMode = .scaleAspectFit
     }
 
 }
