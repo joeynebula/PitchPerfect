@@ -43,6 +43,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         audioRecorder.prepareToRecord()
         audioRecorder.record()
     }
+    
     @IBAction func stopRecording(_ sender: Any) {
         print("Stop recording button pressed")
         configureUI(recording: false)
@@ -53,12 +54,11 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     func configureUI(recording: Bool){
-        if(recording){
+        if (recording)  {
             recordingLabel.text = "Recording in process"
             stopRecordButton.isEnabled = true
             recordButton.isEnabled = false
-        }
-        else{
+        } else {
             stopRecordButton.isEnabled = false
             recordButton.isEnabled = true
             recordingLabel.text = "tap to record"
@@ -69,8 +69,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         print("Finished recording")
         if flag {
             performSegue(withIdentifier: "stopRecording", sender: audioRecorder.url)
-        }
-        else{
+        } else {
             print("recording was not successful")
         }
     }
